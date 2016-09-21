@@ -23,6 +23,7 @@ install:
   - cd ..
   - export CFLAGS=-I$(pwd)/deps/include
   - export LDFLAGS=-L$(pwd)/deps/lib
+  - pip install -r requirements.txt
 
 script:
   - python -m unittest discover
